@@ -2,12 +2,12 @@ public class TrafficLight {
 
     private int id;
     private int numberOfLights;
-    private int defaultColor;
+    private int CurrentCollor;
 
     public TrafficLight() {
         id = 0;
         numberOfLights = 3;
-        defaultColor = 1;
+        CurrentCollor = 1;
     }
 
     public TrafficLight(int id, int numberOfLights) {
@@ -58,12 +58,12 @@ public class TrafficLight {
         return number >= 0;
     }
 
-    public int getDefaultColor() {
-        return defaultColor;
+    public int getCurrentCollor() {
+        return CurrentCollor;
     }
 
-    public void setDefaultColor(int defaultColor) {
-        this.defaultColor = defaultColor;
+    public void setCurrentCollor(int currentCollor) {
+        this.CurrentCollor = currentCollor;
     }
 
     public int getNumberOfLights() {
