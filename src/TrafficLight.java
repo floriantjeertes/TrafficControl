@@ -1,18 +1,21 @@
 public class TrafficLight {
 
+    /**
+     * id = nummer het verkeers licht
+     */
     private int id;
-    private int numberOfLights;
+    private int numberOfLightsOn;
     private int CurrentCollor;
 
     public TrafficLight() {
         id = 0;
-        numberOfLights = 3;
+        numberOfLightsOn = 3;
         CurrentCollor = 1;
     }
 
-    public TrafficLight(int id, int numberOfLights) {
+    public TrafficLight(int id, int numberOfLightsOn) {
         this.id = id;
-        this.numberOfLights = numberOfLights;
+        this.numberOfLightsOn = numberOfLightsOn;
     }
 
     public String showColor(int light) {
@@ -66,11 +69,11 @@ public class TrafficLight {
         this.CurrentCollor = currentCollor;
     }
 
-    public int getNumberOfLights() {
-        return numberOfLights;
+    public int getNumberOfLightsOn() {
+        return numberOfLightsOn;
     }
 
-    public void setNumberOfLights(int numberOfLights) {
-        this.numberOfLights = numberOfLights;
+    public void setNumberOfLightsOn(int numberOfLightsOn) {
+        this.numberOfLightsOn = numberOfLightsOn;
     }
 }
